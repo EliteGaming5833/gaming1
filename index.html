@@ -55,20 +55,25 @@
       border-radius: 5px;
       border: 1px solid #333;
     }
-    .pc-category {
-      font-size: 0.9em;
-      color: #fff;
-      background: #0066ff;
-      padding: 5px 10px;
-      border-radius: 4px;
-      display: inline-block;
-      margin-bottom: 10px;
-    }
     .pc-name {
       font-size: 1.3em;
       color: #fff;
       margin: 10px 0;
       text-align: center;
+      padding: 5px 10px;
+      border-radius: 4px;
+      display: inline-block;
+      width: calc(100% - 20px);
+      box-sizing: border-box;
+    }
+    .beginner {
+      background-color: #4CAF50; /* Grün für Einsteiger */
+    }
+    .midrange {
+      background-color: #FF9800; /* Orange für Midrange */
+    }
+    .high-end {
+      background-color: #F44336; /* Rot für High-End */
     }
     .specs {
       margin: 15px 0;
@@ -138,9 +143,8 @@
 
   <div class="grid">
     <div class="pc-box">
-      <img src="https://via.placeholder.com/350x200/333/cccccc?text=EINSTEIGERKLASSE" alt="Einsteiger Gaming PC">
-      <div class="pc-category">Einsteigerklasse</div>
-      <div class="pc-name">Nexus Core</div>
+      <img src="https://via.placeholder.com/350x200/333/cccccc?text=EINSTEIGER+GAMING" alt="Einsteiger Gaming PC">
+      <div class="pc-name beginner">Einsteiger Gaming PC</div>
       <div class="specs">
         <ul>
           <li>AMD Ryzen 5 7600X (6-Core)</li>
@@ -156,9 +160,8 @@
     </div>
 
     <div class="pc-box">
-      <img src="https://via.placeholder.com/350x200/333/cccccc?text=MIDRANGE+PERFORMANCE" alt="Midrange Gaming PC">
-      <div class="pc-category">Midrange</div>
-      <div class="pc-name">Quantum Plus</div>
+      <img src="https://via.placeholder.com/350x200/333/cccccc?text=MIDRANGE+GAMING" alt="Midrange Gaming PC">
+      <div class="pc-name midrange">Midrange Gaming PC</div>
       <div class="specs">
         <ul>
           <li>Intel Core i7-13700KF (8+8 Core)</li>
@@ -174,9 +177,8 @@
     </div>
 
     <div class="pc-box">
-      <img src="https://via.placeholder.com/350x200/333/cccccc?text=HIGH+END+4K" alt="High End Gaming PC">
-      <div class="pc-category">High End</div>
-      <div class="pc-name">Apex Dominator</div>
+      <img src="https://via.placeholder.com/350x200/333/cccccc?text=HIGH+END+GAMING" alt="High End Gaming PC">
+      <div class="pc-name high-end">High End Gaming PC</div>
       <div class="specs">
         <ul>
           <li>AMD Ryzen 9 7950X3D (16-Core)</li>
